@@ -1,0 +1,35 @@
+{
+  "name": "strava-activities-bulk-exporter-for-garmin-connect",
+  "version": "0.9.0",
+  "description": "Export all activities in your Strava account to gpx files that can then be imported to Garmin Connect.",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0",
+    "papaparse": "^5.2.0",
+    "puppeteer": "^3.0.0",
+    "sha1": "^1.1.1",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/lodash": "^4.14.150",
+    "@types/node": "^13.11.1",
+    "@types/node-fetch": "^2.5.6",
+    "@types/papaparse": "^5.0.3",
+    "@types/puppeteer": "^2.0.1",
+    "@types/sha1": "^1.1.2",
+    "@types/yargs": "^15.0.4",
+    "prettier": "2.0.4",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "login": "node ./dist/index.js login",
+    "get-activity-ids": "node ./dist/index.js get-activity-ids",
+    "export-activities": "node ./dist/index.js export-activities"
+  },
+  "author": "Zean Qin",
+  "license": "MIT"
+}
