@@ -121,7 +121,7 @@ async function run() {
 
         // download files
         let n_url = 1,
-          max_url = 1 // activityIds.length
+          max_url = activityIds.length
         for (const activityId of activityIds) {
           console.log(
             `\n=> ${n_url} of ${activityIds.length}. Fetching audio files for ${activityId}`
