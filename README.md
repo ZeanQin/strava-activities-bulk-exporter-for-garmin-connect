@@ -40,14 +40,20 @@ npm run get-activity-ids
 npm run export-activities
 ```
 
+You can then bulk upload these gpx files into your Garmin Connect account via their web UI.
+
+![Import to Garmin Connect](./import-screen.png)
+
 ## Is this against Strava's Terms of Service?
 
 I don't know, and I don't think so.
 
 ## Detection evasion
 
-I feel like most companies have some kind of detection for web scrapping. Therefore all requests sent by this tool applies a random delay between 1 - 5 seconds before sending each request.
+I feel like most companies have some kind of detection for web scrapping. Therefore this tool adds a random delay between 1 - 5 seconds before sending most requests.
 
 ## Known issues
+
+This tool is developed/tested on macOS. And it doesn't work on Windows Subsystem for Linux (pupputeer doesn't work well on WSL). I haven't tested it on other platforms yet.
 
 I put together this tool really quickly, and most of the code is pulled from a different project I'm building. Therefore it includes some unneccessary files. Let me know if you have any questions at `dev@zean.be`.
