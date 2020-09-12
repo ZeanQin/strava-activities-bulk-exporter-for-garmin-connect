@@ -6,7 +6,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "lodash": "^4.17.15",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "papaparse": "^5.2.0",
     "puppeteer": "^3.0.0",
     "sha1": "^1.1.1",
